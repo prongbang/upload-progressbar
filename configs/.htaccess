@@ -1,0 +1,8 @@
+# no one gets in here!
+order deny,allow
+deny from all
+
+# sub dir
+#allow from all
+
+ErrorDocument 403 "<html style='background: #2A3F54;'><body style='color: #73879C;font-family: sans-serif;'><center><h1 style='margin-top: 3.5em;font-size: 60px;'>404 PAGE NOT FOUND!</h1><p>The resource requested can not be found.</p></center></body></html>"
