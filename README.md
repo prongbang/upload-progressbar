@@ -1,5 +1,5 @@
-# upload-progressbar
-JS File Upload with Progress
+# Upload with Progressbar
+JavaScript Upload with Progressbar
 <p>
 	<a href="https://github.com/prongbang/upload-progressbar/blob/master/upload-progressbar.gif" target="_blank">
 		<img src="https://github.com/prongbang/upload-progressbar/blob/master/upload-progressbar.gif" alt="screencast" style="max-width:100%;">
