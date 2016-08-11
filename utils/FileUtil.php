@@ -108,6 +108,7 @@ class FileUtil {
      * Single Upload File
      * @param type $FILE
      * @param array
+     * @return array
      */
     public static function upload($FILE, $target_dir) {
         $status = array();

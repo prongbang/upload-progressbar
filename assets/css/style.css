@@ -1,18 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
+    background-color: #263238;
+    color: #fff;
+}
+
+.codrops-header {
+    padding: 2em 1em 4em;
+    text-align: center;
+}
+
+.codrops-header h1 {
+    margin: 0.5em 0 0;
+    letter-spacing: -1px;
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 3em 0;
+}
+
+.table {
+    margin-right: 13px;
+}
+
+.box {
+    background-color: #37474F;
+    padding: 0px;
+}
+
+a {
+    outline: none;
+    color: #d3394c;
+    text-decoration: none;
 }
 
 .container {
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
+th {
+    font-weight: 100;
+    padding: 3px;
+}
+
 img {
-    height: 5em;
-    width: 5em;
+    height: 3em;
+    width: 3em;
+    border-radius: 4px;
 }
 
 .btn {
@@ -20,36 +64,43 @@ img {
     border: 1px solid #f7f7f7;
     padding: 8px 20px;
     border-radius: 3px;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-default {
     color: #f1e5e6;
-    background-color: #d3394c;
+    background-color: #E91E63;
 }
 
 .btn-default:hover {
-    background-color: #d30427;
+    background-color: #EC407A;
 }
 
 .btn-primary:hover {
     background-color: #bdbdbd;
 }
 
+.btn-pad {
+    margin-bottom: 3px;
+    padding: 12px;
+}
+
 .btn-primary {
     margin-bottom: 2px;
     padding: 10px;
+    color: #263238;
+    background: #f7f7f7;
 }
 
-/*
- * Custom Button input[type=file]
- */
-.file-upload {
+/*Custom Button input[type=file]*/
+.file-upload-btn {
     position: relative;
     overflow: hidden;
     margin: 10px;
 }
 
-.file-upload input.upload {
+.file-upload-btn input.upload {
     position: absolute;
     top: 0;
     right: 0;

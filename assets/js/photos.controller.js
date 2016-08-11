@@ -1,4 +1,4 @@
-app.controller("photosController", function ($scope, $http, circular) {
+app.controller("photosController", function ($scope, $http) {
 
     $scope.percent = 0;
     $scope.photos = [];
@@ -13,7 +13,6 @@ app.controller("photosController", function ($scope, $http, circular) {
 
     $scope.init = function () {
         document.querySelector('#images').addEventListener('change', handleFileSelect, false);
-        circular.load();
         $scope.findAll();
     };
 
@@ -36,30 +35,60 @@ app.controller("photosController", function ($scope, $http, circular) {
         });
     }
 
-    $scope.upload = function () {
-
-        $('form').ajaxForm({
-            beforeSend: function () {
-                circular.statusEmpty();
-                circular.percent('0%', 0);
+    function ajaxSubmit(myBar, obj, fd) {
+        obj.ajaxSubmit({
+            formData: fd,
+            beforeSend: function (e) {
+                myBar.css("width", "0%");
             },
             uploadProgress: function (event, position, total, percentComplete) {
-                circular.percent((percentComplete + '%'), percentComplete);
-                circular.load();
-            },
-            success: function () {
-                circular.percent('100%', 100);
-                $scope.findAll();
+                myBar.css("width", percentComplete + "%");
             },
             complete: function (xhr) {
-                circular.percent('100%', 100);
-                circular.status(xhr.responseText);
-                circular.load();
+                myBar.css("width", "100%");
+                console.log(xhr.responseText);
+                $scope.$apply(function () {
+                    $scope.findAll();
+                });
             }
         });
+    }
+
+    $scope.upload = function () {
+
+        var typeFile = 'input[type=file]';
+        var form = $('#mainForm')[0];
+        var files = $(typeFile, form)[0].files;
+
+        for (var i = 0; i < files.length; i++) {
+            // specify exact data for formdata
+            var formData = new FormData();
+            // Main magic with files here
+            formData.append('image', files[i]);
+            var formSubmit = $("<form method='POST' action='./photo/upload' enctype='multipart/form-data'></form>");
+            // Sending form
+            ajaxSubmit($("#myBar" + i), formSubmit, formData);
+        }
+
     };
 
     $scope.init();
     $scope.upload();
 
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 10);
+
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+
 });
+
