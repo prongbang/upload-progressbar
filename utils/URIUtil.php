@@ -13,7 +13,7 @@ class URIUtil
 
     public static function curPageURL()
     {
-        return "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";;
+        return "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     }
 
     public static function host()
