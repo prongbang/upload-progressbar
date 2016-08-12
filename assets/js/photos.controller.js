@@ -62,6 +62,9 @@ app.controller("photosController", function ($scope, $http) {
                         $scope.findAll();
                     });
                     ajaxSubmit(files, index);
+                },
+                error: function (e) {
+                    console.error(e);
                 }
             });
         }
