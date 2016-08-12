@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a5d7fa14-f1a6-4919-9304-bfdc64aa8c26" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/photos.controller.js" afterPath="$PROJECT_DIR$/assets/js/photos.controller.js" />
     </list>
     <ignored path="upload-progressbar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="photos.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="photos.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/photos.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="239">
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="e#488#1094#0" expanded="false" />
               </folding>
@@ -87,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/utils/URIUtil.php" />
         <option value="$PROJECT_DIR$/controller/PhotosController.php" />
         <option value="$PROJECT_DIR$/utils/FileUtil.php" />
-        <option value="$PROJECT_DIR$/assets/js/photos.controller.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/assets/js/photos.controller.js" />
       </list>
     </option>
   </component>
@@ -446,7 +446,7 @@
       <workItem from="1470815084844" duration="7467000" />
       <workItem from="1470887497832" duration="9716000" />
       <workItem from="1470907128891" duration="2447000" />
-      <workItem from="1470969594526" duration="3179000" />
+      <workItem from="1470969594526" duration="3497000" />
     </task>
     <task id="LOCAL-00001" summary="Multi upload file">
       <created>1470909249565</created>
@@ -511,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470972680534</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update Photo">
+      <created>1470972778330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1470972778330</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47864000" />
+    <option name="totallyTimeSpent" value="48182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -757,21 +764,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/photos.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#488#1094#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/photos.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="e#488#1094#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

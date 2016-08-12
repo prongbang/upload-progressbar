@@ -81,7 +81,6 @@ app.controller("photosController", function ($scope, $http) {
     };
 
     $scope.init();
-    $scope.upload();
 
     function move() {
         var elem = document.getElementById("myBar");
