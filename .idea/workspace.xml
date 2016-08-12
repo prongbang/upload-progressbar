@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5d7fa14-f1a6-4919-9304-bfdc64aa8c26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/upload-progressbar.gif" afterPath="$PROJECT_DIR$/upload-progressbar.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="upload-progressbar.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,8 +90,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="129" selection-start-line="3" selection-start-column="129" selection-end-line="3" selection-end-column="129" />
+            <state relative-caret-position="238">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -446,7 +446,7 @@
       <workItem from="1470815084844" duration="7467000" />
       <workItem from="1470887497832" duration="9716000" />
       <workItem from="1470907128891" duration="2447000" />
-      <workItem from="1470969594526" duration="2343000" />
+      <workItem from="1470969594526" duration="3080000" />
     </task>
     <task id="LOCAL-00001" summary="Multi upload file">
       <created>1470909249565</created>
@@ -497,11 +497,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470971543006</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update Photo">
+      <created>1470971941841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1470971941841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47028000" />
+    <option name="totallyTimeSpent" value="47765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -755,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="129" selection-start-line="3" selection-start-column="129" selection-end-line="3" selection-end-column="129" />
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
