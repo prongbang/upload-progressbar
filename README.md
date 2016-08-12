@@ -1,8 +1,8 @@
 # Upload with Progressbar
 JavaScript Upload with Progressbar
 <p>
-	<a href="https://github.com/prongbang/upload-progressbar/blob/ee51e149684e6df2fc557a07519b4584f6f2740d/upload-progressbar.gif" target="_blank">
-		<img src="https://github.com/prongbang/upload-progressbar/blob/ee51e149684e6df2fc557a07519b4584f6f2740d/upload-progressbar.gif" alt="screencast" style="max-width:100%;">
+	<a href="https://github.com/prongbang/upload-progressbar/blob/master/upload-progressbar.gif" target="_blank">
+		<img src="https://github.com/prongbang/upload-progressbar/blob/master/upload-progressbar.gif" alt="screencast" style="max-width:100%;">
 	</a>
 </p>
 <br/>
