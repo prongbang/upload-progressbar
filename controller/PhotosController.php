@@ -35,10 +35,12 @@ $app->post('/photo/upload', function () use ($app) {
 
     if (!empty($_FILES[$name])) {
 
-        $status = FileUtil::upload($_FILES[$name], "assets/images/");
+        $photo = new Photos();
+        $index = $photo->findLastPK() + 1;
+
+        $status = FileUtil::upload($index, $_FILES[$name], "assets/images/");
 
         if ($status['status'] == "Success") {
-            $photo = new Photos();
             $photo->src = $status['src'];
             $photo->date = date("Y-m-d H:i:s");
             $photo->save();

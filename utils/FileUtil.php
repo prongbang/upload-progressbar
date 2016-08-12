@@ -106,16 +106,17 @@ class FileUtil {
 
     /**
      * Single Upload File
+     * @param int
      * @param type $FILE
      * @param array
      * @return array
      */
-    public static function upload($FILE, $target_dir) {
+    public static function upload($index, $FILE, $target_dir) {
         $status = array();
 
         if (!empty($FILE)) {
 
-            $filename = FileUtil::generate_name(1) . "." . FileUtil::get_extension($FILE['name']);
+            $filename = FileUtil::generate_name($index) . "." . FileUtil::get_extension($FILE['name']);
             $target_file = $target_dir . basename($filename);
 
             if (FileUtil::check_file_extension($filename)) {

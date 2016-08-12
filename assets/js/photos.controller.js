@@ -35,23 +35,36 @@ app.controller("photosController", function ($scope, $http) {
         });
     }
 
-    function ajaxSubmit(myBar, obj, fd) {
-        obj.ajaxSubmit({
-            formData: fd,
-            beforeSend: function (e) {
-                myBar.css("width", "0%");
-            },
-            uploadProgress: function (event, position, total, percentComplete) {
-                myBar.css("width", percentComplete + "%");
-            },
-            complete: function (xhr) {
-                myBar.css("width", "100%");
-                console.log(xhr.responseText);
-                $scope.$apply(function () {
-                    $scope.findAll();
-                });
-            }
-        });
+    function ajaxSubmit(files, index) {
+
+        if (files.length != index) {
+            // specify exact data for formdata
+            var formData = new FormData();
+            // Main magic with files here
+            formData.append('image', files[index]);
+            var formSubmit = $("<form method='POST' action='./photo/upload' enctype='multipart/form-data'></form>");
+            var myBar = $("#myBar" + index);
+
+            index++;
+
+            formSubmit.ajaxSubmit({
+                formData: formData,
+                beforeSend: function (e) {
+                    myBar.css("width", "0%");
+                },
+                uploadProgress: function (event, position, total, percentComplete) {
+                    myBar.css("width", percentComplete + "%");
+                },
+                complete: function (xhr) {
+                    myBar.css("width", "100%");
+                    console.log(xhr.responseText);
+                    $scope.$apply(function () {
+                        $scope.findAll();
+                    });
+                    ajaxSubmit(files, index);
+                }
+            });
+        }
     }
 
     $scope.upload = function () {
@@ -60,14 +73,9 @@ app.controller("photosController", function ($scope, $http) {
         var form = $('#mainForm')[0];
         var files = $(typeFile, form)[0].files;
 
-        for (var i = 0; i < files.length; i++) {
-            // specify exact data for formdata
-            var formData = new FormData();
-            // Main magic with files here
-            formData.append('image', files[i]);
-            var formSubmit = $("<form method='POST' action='./photo/upload' enctype='multipart/form-data'></form>");
-            // Sending form
-            ajaxSubmit($("#myBar" + i), formSubmit, formData);
+        // Sending form
+        if (files.length > 0) {
+            ajaxSubmit(files, 0);
         }
 
     };
