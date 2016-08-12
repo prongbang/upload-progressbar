@@ -28,11 +28,9 @@
       <file leaf-file-name="photos.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/photos.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding>
-                <element signature="e#488#1094#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="514">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -446,7 +444,7 @@
       <workItem from="1470815084844" duration="7467000" />
       <workItem from="1470887497832" duration="9716000" />
       <workItem from="1470907128891" duration="2447000" />
-      <workItem from="1470969594526" duration="3497000" />
+      <workItem from="1470969594526" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="Multi upload file">
       <created>1470909249565</created>
@@ -518,11 +516,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470972778330</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Recursive upload file">
+      <created>1470973138094</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1470973138094</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48182000" />
+    <option name="totallyTimeSpent" value="48267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -564,7 +569,8 @@
     <MESSAGE value="Multi upload file" />
     <MESSAGE value="Recursive Upload File" />
     <MESSAGE value="Update Photo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Photo" />
+    <MESSAGE value="Recursive upload file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recursive upload file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -774,11 +780,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/photos.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#488#1094#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="514">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
